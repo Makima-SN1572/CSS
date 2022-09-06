@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /*直接子元素,选择所有作为E元素的直接子元素,对更深一层的元素不起作用,用>表示*/
+    div>p{
+        color: red;
+    }
+</style>
+<body>
+    <div>
+        <p>大家好</p>
+        <ul>
+            <li>
+                <p>
+                    我很好<!--因为p标签不是直接和div标签为一层上下级中间有别的标签,所以作用不到p标签-->
+                </p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

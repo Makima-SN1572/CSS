@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*浮动的特点*/
+        /*浮动后的标签具有行内块特点*/
+        .one {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /*1.浮动元素脱离标准流
+            2.浮动元素比标准流高半个级别,可以覆盖标准流中的元素(此处为one中的float left[此时只有one有浮动元素]在two盒子中但其tow文字依然紧靠one盒子)*/
+
+            float: left;
+
+            /*浮动的标签是顶对齐,可以用margin来解除顶对齐*/
+            margin-top: 50px;
+        }
+        .two {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            /*3.浮动找浮动,下一个浮动元素会在上一个浮动元素后面左右浮动*/
+            float: left;
+            /*这里margin没有生效,因为有浮动,盒子无法水平居中*/
+            margin: 0 auto;
+        }
+        .three {
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+</body>
+</html>

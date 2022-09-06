@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css书写: 1.定位 / 浮动 / display ; 2. 盒子模型 3.文字属性 */
+        .box {
+            /* 静态定位,默认值,标准流 */
+            /* 只加position不会搞变位置 */
+            position: relative;
+            left: 100px;
+            top: 200px;
+            /* 相对定位的特点:1占有原来的位置, 2.仍有具体标签显示模式特点 3.改变位置是参照自己原来的位置 没有脱标*/
+            /* 如果left和right都有,就以left为准,如果top和bottom都有name就以top为准,与代码执行顺序无关,所以此处下方写的right\bottom对box没有任何影响 */
+            right: 200px;
+            bottom: 400px;
+
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <div class="box">box</div> 
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+    <p>测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试</p>
+        
+</body>
+</html>

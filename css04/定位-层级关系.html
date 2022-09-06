@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .one {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+            background-color: pink;
+
+            z-index: 2;
+        }
+
+        .two {
+            position: absolute;
+            left: 50px;
+            top: 40px;
+            background-color: aqua;
+
+            /* z-index: 1; */
+        }
+        /* 如果是默认的情况下,定位的盒子,后来者居上,
+           z-index:整数;取值越大显示顺序越靠上,未设置,z-index默认为0 ,z-index一定要和定位在一起才生效*/
+    </style>
+</head>
+<body>
+    <div class="one">box</div>
+    <div class="two">box</div>
+</body>
+</html>

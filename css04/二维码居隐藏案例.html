@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            height: 40px;
+            border-bottom: 1px solid black;
+        }
+
+        ul {
+            list-style: none;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        ul li {
+            float: left;
+            width: 20%;
+            height: 40px;
+            border-right: 1px solid black;
+            line-height: 40px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        ul .last {
+        border-right: none;
+        }
+
+        ul li a {
+            display: block;
+            text-decoration: none;
+            height: 40px;
+            color: black;
+        }
+
+        ul li .app {
+            position: relative;
+        }
+
+        .code {
+            position: absolute;
+            left: 50%;
+            top: 41px;
+            /* margin-left: -60px; */
+            transform: translate(-50%);
+            display: none;
+            
+        }
+
+        /* 鼠标悬停显示二维码图片 */
+        .nav li a:hover img {
+            display: block;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">我要投资</a></li>
+            <li><a href="#">平台介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <li><a href="#" class="app">手机微金所<img src="./images/code.jpg" alt="" class="code"></a></li>
+            <li class="last"><a href="#">个人中心</a></li>
+        </ul>
+    </div>
+</body>
+</html>

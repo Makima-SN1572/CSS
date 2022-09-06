@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #idd{
+            color: black;
+        }
+        .box{
+            color: blue;
+        }
+        /*这里发现不仅优先级更高的选择器会执行,而且就算由上而下执行命令也会按照优先级执行*/
+         /*div{
+            color: green;
+        }*/
+        /*!important优先级最高,但不能使用在继承里,此处div继承body属性,不能加在body中,div自己有样式就不会继承body里的important*/
+        div{
+            color: green !important;
+        }
+        body{
+            color: red;
+        }
+    </style>
+</head>
+<body><!--style为行内样式-->
+    <div class="box" id="idd" style="color: aqua;">测试优先级</div>
+</body>
+</html>
