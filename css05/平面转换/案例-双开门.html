@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>双开门</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .father {
+            width: 1366px;
+            height: 600px;
+            margin: 0 auto;
+            background: url('./images/bg.jpg');
+            overflow: hidden;
+        }
+
+        .father::before,
+        .father::after {
+            float: left;
+            content: '';
+            width: 50%;
+            height: 600px;
+            background-image: url(./images/fm.jpg);
+            transition: all 0.5s;
+        }
+
+        /* 单独控制after的背景图 */
+        .father::after {
+            background-position: right 0;
+        }
+
+        .father:hover::before {
+            transform: translateX(-100%);
+        }
+
+
+        .father:hover::after {
+            transform: translateX(100%);
+         }
+    </style>
+</head>
+<body>
+    <div class="father">
+    </div>
+</body>
+</html>
