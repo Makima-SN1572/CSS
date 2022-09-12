@@ -1,0 +1,15 @@
+//嵌套写法快速生成后代选择器
+
+.father {
+    width: 100px;
+    .son {
+        color: aquamarine;
+        //& 表示当前选择器 作伪类
+        &:hover {
+            color: black;
+        }
+    }
+    &:hover {
+        color: aliceblue;
+    }
+}
